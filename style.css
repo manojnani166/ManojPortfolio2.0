@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.up-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: #2f303a;
+    height: 2rem;
+    width: 2rem;
+    background-color: #fff;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.25rem;
+    border-radius: 0.75rem;
+  }
+
+.sub-title{
+    color: #2f303a;
+}
+  
+.landing-page{
+    background-image: url(images/newpage.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;				
+}
+
+.landing-page-heading{
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 0.125rem;
+    margin: 0;
+    }
+
+.heading-left, .heading-right {
+    transform: translateY(-50%);
+}
+  
+/* -------------About------------ */
+#about{
+    padding: 5rem 0;
+}
+
+.about-me-section-description {
+    color: #494949;
+    font-family: "Roboto";
+    font-size: 1rem;
+}
+
+.about-me-section-description-highlights{
+    color: #2f303a;
+}
+
+.about-me-section-image {
+    margin-top: 3.125rem;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0.125rem 0.125rem 1.5625rem rgba(0, 0, 0, 0.3);
+}
+
+.skills-section {
+    background-color: #ffffff;  
+}
+
+.skills-card {
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 0.625rem;
+    margin-top: 1.5625rem;
+    transition: background 0.5s, transform 0.5s ;
+}
+
+.skills-card-image {
+    width: 4rem;
+    height: 4rem;
+}
+
+.skills-card-title {
+    color: #494949;
+    font-family: "Roboto";
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-top: 0.625rem; 
+}
+
+.skills-card:hover {
+    box-shadow: 0.125rem 0.125rem 1.5625rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.75rem); 
+}
+
+/*-----------portfolio----------------*/
+#portfolio{
+    padding: 3.125rem 0;
+    }
+    .work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 3.125rem;
+    }
+    .work{
+    border-radius: 0.625rem;
+    position: relative;
+    overflow: hidden;
+    }
+    .portfolio-project-heading{
+    color: #f30e56;
+    }
+    .portfolio-project-description{
+    color: #f9f9f9;
+    }
+    .work img{
+    width: 100%;
+    border-radius: 0.625rem;
+    display: block;
+    transition: transform 0.5s;
+    }
+    .layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.7), #fff);
+    border-radius: 0.625rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    transition: height 0.5s;
+    }
+    .layer h3{
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    }
+    .layer a{
+    margin-top: 1.25rem;
+    color:#0a0909;
+    text-decoration: none;
+    font-size: 1.125rem;
+    line-height: 3.75rem;
+    background: #ffffff;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    text-align: center;
+    
+    }
+    .work:hover img{
+    transform:scale(1.1)
+    }
+    .work:hover .layer{
+    height: 100%;
+    }
+
+/*--------------contact-------------*/
+.contact-left p{
+    margin-top: 1.875rem; 
+    }
+    .contact-right{
+    margin-top: 1.875rem; 
+    }
+    .contact-left p i{
+    color: #2f303a;
+    margin-right: 0.938rem; 
+    font-size: 1.563rem; 
+    }
+    .social-icons{
+    margin: 1.875rem;
+    }
+    .social-icons a{
+    text-decoration: none;
+    font-size: 1.875rem; 
+    margin-right: 0.938rem; 
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+    }
+    .social-icons a:hover{
+    color: #2f303a;
+    transform:translateY(-0.313rem); 
+    }
+    
+    form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 0.938rem; 
+    margin: 0.938rem 0; 
+    color: #ffffff;
+    font-size: 1.125rem; 
+    border-radius: 0.375rem;
+    }
+    
+    .copyright{
+    width: 100%;
+    text-align: center;
+    padding: 1.563rem; 
+    background: #262626;
+    font-weight: 300;
+    margin-top: 1.25rem; 
+    color: #ffffff;
+    }
+    .copyright i{
+    color: #ff0051bc;
+    }
+
+
+  
+      
